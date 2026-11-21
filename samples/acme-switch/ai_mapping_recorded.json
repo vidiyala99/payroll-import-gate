@@ -1,0 +1,23 @@
+{
+  "_note": "HAND-WRITTEN FIXTURE standing in for a recorded LLM column-mapping response. No model was called to produce it. It has the shape a structured-output call would return (source_column, target_field, confidence, rationale) so the acceptance rules can be tested deterministically.",
+  "assistant": "recorded-fixture",
+  "proposals": {
+    "register": [
+      {"source_column": "Gross Pay", "target_field": "gross", "confidence": 0.99, "rationale": "standard register label"},
+      {"source_column": "FIT W/H", "target_field": "deduction:fed_income_tax", "confidence": 0.97, "rationale": "FIT = federal income tax; W/H = withholding"},
+      {"source_column": "SS EE", "target_field": "deduction:social_security_ee", "confidence": 0.95, "rationale": "SS = Social Security, EE = employee share"},
+      {"source_column": "Med EE", "target_field": "deduction:medicare_ee", "confidence": 0.95, "rationale": "Medicare employee share"},
+      {"source_column": "PF EE", "target_field": "deduction:provident_fund_ee", "confidence": 0.93, "rationale": "PF = provident fund (India), employee share; values only on ACMEIN rows"},
+      {"source_column": "Prof Tax", "target_field": "deduction:professional_tax", "confidence": 0.91, "rationale": "professional tax deduction; values only on ACMEIN rows"},
+      {"source_column": "TDS", "target_field": "deduction:tds", "confidence": 0.96, "rationale": "tax deducted at source (India)"},
+      {"source_column": "Misc Ded", "target_field": "deduction:tds", "confidence": 0.55, "rationale": "unlabeled deduction; small amount, could be TDS, union dues or a garnishment"}
+    ],
+    "timeclock": [
+      {"source_column": "Brk", "target_field": "break_minutes", "confidence": 0.92, "rationale": "values like 30 and 0:30 alongside in/out times"},
+      {"source_column": "Src", "target_field": "entry_source", "confidence": 0.91, "rationale": "values device/manual/schedule describe how the punch was captured"}
+    ],
+    "comp": [
+      {"source_column": "New Rate", "target_field": "rate", "confidence": 0.93, "rationale": "currency amounts next to a rate type column"}
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+# Demonstration on MOCK/SAMPLE data. Standard library only; no dependencies to pin.
+[project]
+name = "payroll-import-gate"
+version = "0.1.0"
+description = "Demonstration on mock/sample data: payroll import with provenance, a blocking validation gate, and evals"
+requires-python = ">=3.11"
+dependencies = []

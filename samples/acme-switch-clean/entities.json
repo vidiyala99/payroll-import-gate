@@ -1,0 +1,22 @@
+{
+  "_mock": "SAMPLE configuration for the demo. The US overtime values mirror the familiar 40-hour weekly rule only so the arithmetic is recognizable; nothing here is a statutory or tax claim for either country.",
+  "entities": {
+    "US-01": {
+      "name": "Acme Field Services US Inc. (fictional)",
+      "country": "US",
+      "aliases": ["ACMEUS", "ACME US"],
+      "rules": [
+        {"effective_from": "2026-01-01", "currency": "USD", "periods_per_year": 26, "ot_weekly_threshold_hours": "40", "ot_multiplier": "1.5", "deduction_codes": ["fed_income_tax", "social_security_ee", "medicare_ee"]},
+        {"effective_from": "2026-11-16", "currency": "USD", "periods_per_year": 26, "ot_weekly_threshold_hours": "40", "ot_multiplier": "1.5", "deduction_codes": ["fed_income_tax", "social_security_ee", "medicare_ee"]}
+      ]
+    },
+    "IN-01": {
+      "name": "Acme Field Services India Pvt. Ltd. (fictional)",
+      "country": "IN",
+      "aliases": ["ACMEIN", "ACME INDIA"],
+      "rules": [
+        {"effective_from": "2026-01-01", "currency": "INR", "periods_per_year": 12, "ot_weekly_threshold_hours": null, "ot_multiplier": "1", "deduction_codes": ["provident_fund_ee", "professional_tax", "tds"]}
+      ]
+    }
+  }
+}

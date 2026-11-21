@@ -1,0 +1,18 @@
+{
+  "_mock": "MOCK/SAMPLE DATA written by hand for this demonstration. Acme Field Services is fictional; every name, ID and amount is invented. Not real payroll, not Rippling data. Deduction amounts (for example the India TDS, PF and professional-tax figures) are illustrative placeholders carried from the mock register; they are not computed under any tax regime (old or new) and are not tax advice. This is the 'as delivered' set: the same company as acme-switch-clean with problems planted on purpose (see README, 'The demo dataset').",
+  "company": "Acme Field Services (fictional), switching payroll providers; files as the customer delivered them",
+  "files": {
+    "register": "prior_register.csv",
+    "timeclock": "timeclock_export.csv",
+    "comp": "comp_changes.csv",
+    "roster": "roster.csv",
+    "entities": "entities.json",
+    "ai_mapping": "ai_mapping_recorded.json"
+  },
+  "date_order": "MDY",
+  "reconcile_tolerance": "0.00",
+  "pay_periods": {
+    "US-01": {"current": ["2026-11-02", "2026-11-15"], "previous": ["2026-10-19", "2026-11-01"]},
+    "IN-01": {"current": ["2026-11-01", "2026-11-30"], "previous": ["2026-10-01", "2026-10-31"]}
+  }
+}

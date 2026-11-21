@@ -1,0 +1,27 @@
+{
+  "_note": "HAND-WRITTEN FIXTURES standing in for model-written 'why did my pay change' answers. No model was called. Two are faithful to the pay-run diff; one is deliberately unfaithful (wrong amount, invented tax reason, omits overtime) so the checker has something to catch.",
+  "explanations": {
+    "W002_faithful": {
+      "worker": "W002",
+      "text": "Your gross pay rose from $2,400.00 to $2,577.00, up $177.00. You worked 4 overtime hours this period and none last period, which added $180.00 of overtime pay. Your hourly rate went from $30.00 to $31.50 effective 2026-11-09. Your regular hours went from 80 to 78, so regular pay moved from $2,400.00 to $2,397.00."
+    },
+    "W003_faithful": {
+      "worker": "W003",
+      "text": "Your gross pay went down from $2,240.00 to $2,212.00, a drop of $28.00. Your regular hours fell from 80 to 76, lowering regular pay from $2,240.00 to $2,128.00. You also worked 2 overtime hours, adding $84.00 of overtime pay. Your hourly rate stayed at $28.00."
+    },
+    "W003_unfaithful": {
+      "worker": "W003",
+      "text": "Your gross pay went down by $30.00 because your tax withholding increased this period. Your regular hours fell from 80 to 76."
+    },
+    "W003_wrong_direction": {
+      "worker": "W003",
+      "_why": "Reviewer counterexample 1: every number is in the diff, but it says pay rose when it fell.",
+      "text": "Your gross pay rose by $28.00. Your regular hours went from 80 to 76. You worked 2 overtime hours."
+    },
+    "W003_number_on_wrong_component": {
+      "worker": "W003",
+      "_why": "Reviewer counterexample 2: 28 is a value in the diff (the gross change and the rate), but not an overtime-hours value.",
+      "text": "Your gross pay fell from $2,240.00 to $2,212.00, a drop of $28.00. Your regular hours went from 80 to 76. Your overtime hours went from 0 to 28."
+    }
+  }
+}

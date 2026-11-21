@@ -1,0 +1,7 @@
+worker_id,name,entity,pay_type,schedule_type,badge,prior_emp_no,expected_hours_min,status
+W001,Dana Ortiz,US-01,salaried,fixed,,A-0001,,active
+W002,Lee Park,US-01,hourly,variable,2002,A-0002,60,active
+W003,Sam Rivera,US-01,hourly,variable,2003,A-0003,60,active
+W004,Jo Kim,US-01,hourly,fixed,2004,A-0004,60,active
+W101,Priya Nair,IN-01,salaried,fixed,,IN-0101,,active
+W102,Arjun Rao,IN-01,salaried,fixed,,IN-0102,,active
